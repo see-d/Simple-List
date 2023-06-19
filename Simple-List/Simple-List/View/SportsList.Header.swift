@@ -19,7 +19,9 @@ extension Feature.Domain.Sport {
             
             return stack
         }()
+        
         private lazy var titleLabel = UILabel()
+        
         private lazy var toggleButton = {
             let button = UIButton(type: .custom)
             button.contentVerticalAlignment = .fill
@@ -35,7 +37,6 @@ extension Feature.Domain.Sport {
             return button
         }()
         
-        private var section:Int = 0
         private var toggleAction: (() -> ()?)?
 
         override init(reuseIdentifier: String?) {
