@@ -9,5 +9,9 @@ import Foundation
 
 struct SportsViewModel {
     private(set) var sports:[Feature.Domain.Sport] = []
-
+    
+    func title(for section:Int) -> String? {
+        guard sports.indices.contains(section) else { return nil }
+        return sports[section].title
+    }
 }
