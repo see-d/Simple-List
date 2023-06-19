@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		593E82C72A40897E009F3888 /* Event.Domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593E82C52A40897E009F3888 /* Event.Domain.swift */; };
+		593E82C82A40897E009F3888 /* Sport.Domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593E82C62A40897E009F3888 /* Sport.Domain.swift */; };
 		598D775D2A405DA20075CB53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598D775C2A405DA20075CB53 /* AppDelegate.swift */; };
 		598D77612A405DA20075CB53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598D77602A405DA20075CB53 /* ViewController.swift */; };
 		598D77642A405DA20075CB53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 598D77622A405DA20075CB53 /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		593E82C52A40897E009F3888 /* Event.Domain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.Domain.swift; sourceTree = "<group>"; };
+		593E82C62A40897E009F3888 /* Sport.Domain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sport.Domain.swift; sourceTree = "<group>"; };
 		598D77592A405DA20075CB53 /* Simple-List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple-List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		598D775C2A405DA20075CB53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		598D77602A405DA20075CB53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		593E82C42A40897E009F3888 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				593E82C52A40897E009F3888 /* Event.Domain.swift */,
+				593E82C62A40897E009F3888 /* Sport.Domain.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		598D77502A405DA20075CB53 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +112,7 @@
 		598D775B2A405DA20075CB53 /* Simple-List */ = {
 			isa = PBXGroup;
 			children = (
+				593E82C42A40897E009F3888 /* Model */,
 				598D775C2A405DA20075CB53 /* AppDelegate.swift */,
 				598D77602A405DA20075CB53 /* ViewController.swift */,
 				598D77622A405DA20075CB53 /* Main.storyboard */,
@@ -259,6 +273,8 @@
 			files = (
 				598D77612A405DA20075CB53 /* ViewController.swift in Sources */,
 				598D775D2A405DA20075CB53 /* AppDelegate.swift in Sources */,
+				593E82C72A40897E009F3888 /* Event.Domain.swift in Sources */,
+				593E82C82A40897E009F3888 /* Sport.Domain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
