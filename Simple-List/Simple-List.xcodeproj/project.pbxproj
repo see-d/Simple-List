@@ -11,9 +11,6 @@
 		598D77612A405DA20075CB53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598D77602A405DA20075CB53 /* ViewController.swift */; };
 		598D77662A405DA40075CB53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 598D77652A405DA40075CB53 /* Assets.xcassets */; };
 		598D77692A405DA40075CB53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 598D77672A405DA40075CB53 /* LaunchScreen.storyboard */; };
-		598D77742A405DA40075CB53 /* Simple_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598D77732A405DA40075CB53 /* Simple_ListTests.swift */; };
-		598D777E2A405DA40075CB53 /* Simple_ListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598D777D2A405DA40075CB53 /* Simple_ListUITests.swift */; };
-		598D77802A405DA40075CB53 /* Simple_ListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598D777F2A405DA40075CB53 /* Simple_ListUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,10 +38,7 @@
 		598D77682A405DA40075CB53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		598D776A2A405DA40075CB53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		598D776F2A405DA40075CB53 /* Simple-ListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple-ListTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		598D77732A405DA40075CB53 /* Simple_ListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple_ListTests.swift; sourceTree = "<group>"; };
 		598D77792A405DA40075CB53 /* Simple-ListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple-ListUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		598D777D2A405DA40075CB53 /* Simple_ListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple_ListUITests.swift; sourceTree = "<group>"; };
-		598D777F2A405DA40075CB53 /* Simple_ListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple_ListUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				598D775B2A405DA20075CB53 /* Simple-List */,
-				598D77722A405DA40075CB53 /* Simple-ListTests */,
-				598D777C2A405DA40075CB53 /* Simple-ListUITests */,
 				598D775A2A405DA20075CB53 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,23 +94,6 @@
 				598D776A2A405DA40075CB53 /* Info.plist */,
 			);
 			path = "Simple-List";
-			sourceTree = "<group>";
-		};
-		598D77722A405DA40075CB53 /* Simple-ListTests */ = {
-			isa = PBXGroup;
-			children = (
-				598D77732A405DA40075CB53 /* Simple_ListTests.swift */,
-			);
-			path = "Simple-ListTests";
-			sourceTree = "<group>";
-		};
-		598D777C2A405DA40075CB53 /* Simple-ListUITests */ = {
-			isa = PBXGroup;
-			children = (
-				598D777D2A405DA40075CB53 /* Simple_ListUITests.swift */,
-				598D777F2A405DA40075CB53 /* Simple_ListUITestsLaunchTests.swift */,
-			);
-			path = "Simple-ListUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +235,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				598D77742A405DA40075CB53 /* Simple_ListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,8 +242,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				598D77802A405DA40075CB53 /* Simple_ListUITestsLaunchTests.swift in Sources */,
-				598D777E2A405DA40075CB53 /* Simple_ListUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
