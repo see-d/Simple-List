@@ -34,7 +34,12 @@ extension SportsViewController {
 
 extension SportsViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return viewmodel.sports.count
+        switch viewmodel.state {
+        case .success(let sports):
+            return sports.count
+        default:
+            return 0
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -44,6 +49,7 @@ extension SportsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Feature.Domain.Sport.Cell.reuseIdentifier,
                                                  for: indexPath)
+        
         
         return cell
     }

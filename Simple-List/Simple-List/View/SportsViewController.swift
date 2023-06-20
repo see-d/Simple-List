@@ -11,6 +11,8 @@ class SportsViewController: UIViewController {
     private(set) var viewmodel: SportsViewModel
     lazy var tableview = UITableView(frame: view.frame, style: .plain)
     
+    private var stateObserver: NSKeyValueObservation?
+    
     required init(with viewmodel: SportsViewModel) {
         self.viewmodel = viewmodel
         
@@ -26,6 +28,12 @@ class SportsViewController: UIViewController {
         super.viewDidLoad()
         
         prepareViewHeirarchy()
+        
+        stateObserver = viewmodel.observe(\.onStateChanged, changeHandler: { [weak self] _,_ in
+            self?.render()
+        })
+  
+        viewmodel.fetchSports()
     }
     
     private func prepareViewHeirarchy() {
@@ -43,6 +51,15 @@ class SportsViewController: UIViewController {
             view.safeAreaLayoutGuide.leadingAnchor.constraint(equalTo: tableview.leadingAnchor),
             view.safeAreaLayoutGuide.trailingAnchor.constraint(equalTo: tableview.trailingAnchor)
         ])
+    }
+    
+    private func render() {
+        switch viewmodel.state {
+        case .success(_):
+            tableview.reloadData()
+        default:
+            return
+        }
     }
 
 }

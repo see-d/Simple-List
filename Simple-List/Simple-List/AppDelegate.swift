@@ -15,10 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
-        let testSports = [Feature.Domain.Sport.tennisFixture,
-                          Feature.Domain.Sport.f1Fixture]
-
-        let viewmodel = SportsViewModel(sports: testSports)
+        let viewmodel = SportsViewModel()
         let initialViewController = SportsViewController(with: viewmodel)
 
         self.window?.rootViewController = initialViewController
