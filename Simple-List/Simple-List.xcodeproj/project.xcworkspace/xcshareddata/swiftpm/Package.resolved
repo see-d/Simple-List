@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "api-service",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/see-d/API-Service.git",
+      "state" : {
+        "revision" : "4014d30e65962e16f9723b0d4ee08424c6fc88b9",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "events-list",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/see-d/Events-List.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "60e1cf54b94d1641e481a98deda503085986d261"
+      }
+    }
+  ],
+  "version" : 2
+}

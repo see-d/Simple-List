@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5927468F2A41AA540081A939 /* Events-List in Frameworks */ = {isa = PBXBuildFile; productRef = 5927468E2A41AA540081A939 /* Events-List */; };
 		598D775D2A405DA20075CB53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598D775C2A405DA20075CB53 /* AppDelegate.swift */; };
-		598D77612A405DA20075CB53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598D77602A405DA20075CB53 /* ViewController.swift */; };
 		598D77662A405DA40075CB53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 598D77652A405DA40075CB53 /* Assets.xcassets */; };
 		598D77692A405DA40075CB53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 598D77672A405DA40075CB53 /* LaunchScreen.storyboard */; };
+		59C375082A43129C00A273D0 /* AppDelegate.Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C375072A43129C00A273D0 /* AppDelegate.Navigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,12 +34,12 @@
 /* Begin PBXFileReference section */
 		598D77592A405DA20075CB53 /* Simple-List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple-List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		598D775C2A405DA20075CB53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		598D77602A405DA20075CB53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		598D77652A405DA40075CB53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		598D77682A405DA40075CB53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		598D776A2A405DA40075CB53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		598D776F2A405DA40075CB53 /* Simple-ListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple-ListTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		598D77792A405DA40075CB53 /* Simple-ListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple-ListUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59C375072A43129C00A273D0 /* AppDelegate.Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.Navigation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5927468F2A41AA540081A939 /* Events-List in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				598D775C2A405DA20075CB53 /* AppDelegate.swift */,
-				598D77602A405DA20075CB53 /* ViewController.swift */,
+				59C375072A43129C00A273D0 /* AppDelegate.Navigation.swift */,
 				598D77652A405DA40075CB53 /* Assets.xcassets */,
 				598D77672A405DA40075CB53 /* LaunchScreen.storyboard */,
 				598D776A2A405DA40075CB53 /* Info.plist */,
@@ -112,6 +114,9 @@
 			dependencies = (
 			);
 			name = "Simple-List";
+			packageProductDependencies = (
+				5927468E2A41AA540081A939 /* Events-List */,
+			);
 			productName = "Simple-List";
 			productReference = 598D77592A405DA20075CB53 /* Simple-List.app */;
 			productType = "com.apple.product-type.application";
@@ -184,6 +189,9 @@
 				Base,
 			);
 			mainGroup = 598D77502A405DA20075CB53;
+			packageReferences = (
+				5927468D2A41AA540081A939 /* XCRemoteSwiftPackageReference "Events-List" */,
+			);
 			productRefGroup = 598D775A2A405DA20075CB53 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -226,8 +234,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				598D77612A405DA20075CB53 /* ViewController.swift in Sources */,
 				598D775D2A405DA20075CB53 /* AppDelegate.swift in Sources */,
+				59C375082A43129C00A273D0 /* AppDelegate.Navigation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +566,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5927468D2A41AA540081A939 /* XCRemoteSwiftPackageReference "Events-List" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/see-d/Events-List.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5927468E2A41AA540081A939 /* Events-List */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5927468D2A41AA540081A939 /* XCRemoteSwiftPackageReference "Events-List" */;
+			productName = "Events-List";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 598D77512A405DA20075CB53 /* Project object */;
 }
