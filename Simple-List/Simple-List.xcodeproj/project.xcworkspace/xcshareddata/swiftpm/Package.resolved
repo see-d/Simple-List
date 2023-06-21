@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/see-d/API-Service.git",
       "state" : {
-        "revision" : "e99cf232a79d13e8841cb7fb7e9fd393c9a4eb88",
-        "version" : "1.0.1"
+        "revision" : "d1bb3c72741c06a0e0a43c3b815305790d077c6a",
+        "version" : "1.0.2"
       }
     },
     {
@@ -15,7 +15,7 @@
       "location" : "https://github.com/see-d/Events-List.git",
       "state" : {
         "branch" : "main",
-        "revision" : "6b11826314e418365735c3078542d91d60715646"
+        "revision" : "6ecea79df5d6bf3f8ef3bc30b4041f3ba211e904"
       }
     }
   ],

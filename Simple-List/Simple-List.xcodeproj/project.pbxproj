@@ -11,7 +11,7 @@
 		598D77662A405DA40075CB53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 598D77652A405DA40075CB53 /* Assets.xcassets */; };
 		598D77692A405DA40075CB53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 598D77672A405DA40075CB53 /* LaunchScreen.storyboard */; };
 		59C375082A43129C00A273D0 /* AppDelegate.Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C375072A43129C00A273D0 /* AppDelegate.Navigation.swift */; };
-		59D4CE1B2A43457D002B04A1 /* Events-List in Frameworks */ = {isa = PBXBuildFile; productRef = 59D4CE1A2A43457D002B04A1 /* Events-List */; };
+		7356152A2A434A3F00F56B41 /* Events-List in Frameworks */ = {isa = PBXBuildFile; productRef = 735615292A434A3F00F56B41 /* Events-List */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59D4CE1B2A43457D002B04A1 /* Events-List in Frameworks */,
+				7356152A2A434A3F00F56B41 /* Events-List in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +80,7 @@
 			);
 			name = "Simple-List";
 			packageProductDependencies = (
-				59D4CE1A2A43457D002B04A1 /* Events-List */,
+				735615292A434A3F00F56B41 /* Events-List */,
 			);
 			productName = "Simple-List";
 			productReference = 598D77592A405DA20075CB53 /* Simple-List.app */;
@@ -111,7 +111,7 @@
 			);
 			mainGroup = 598D77502A405DA20075CB53;
 			packageReferences = (
-				59D4CE192A43457D002B04A1 /* XCRemoteSwiftPackageReference "Events-List" */,
+				735615282A434A3F00F56B41 /* XCRemoteSwiftPackageReference "Events-List" */,
 			);
 			productRefGroup = 598D775A2A405DA20075CB53 /* Products */;
 			projectDirPath = "";
@@ -352,7 +352,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		59D4CE192A43457D002B04A1 /* XCRemoteSwiftPackageReference "Events-List" */ = {
+		735615282A434A3F00F56B41 /* XCRemoteSwiftPackageReference "Events-List" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/see-d/Events-List.git";
 			requirement = {
@@ -363,9 +363,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		59D4CE1A2A43457D002B04A1 /* Events-List */ = {
+		735615292A434A3F00F56B41 /* Events-List */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 59D4CE192A43457D002B04A1 /* XCRemoteSwiftPackageReference "Events-List" */;
+			package = 735615282A434A3F00F56B41 /* XCRemoteSwiftPackageReference "Events-List" */;
 			productName = "Events-List";
 		};
 /* End XCSwiftPackageProductDependency section */
